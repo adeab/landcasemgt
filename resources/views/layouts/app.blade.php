@@ -34,6 +34,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
   <!-- CSS Files -->
   <link id="pagestyle" href="{{asset('material_assets/css/material-dashboard.css?v=3.0.2')}}" rel="stylesheet" />
+  <link id="pagestyle" href="{{asset('css/style.css')}}" rel="stylesheet" />
   @livewireStyles
 </head>
 
