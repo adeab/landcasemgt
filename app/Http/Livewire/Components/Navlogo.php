@@ -1,17 +1,16 @@
 <?php
 
-namespace App\Http\Livewire;
+namespace App\Http\Livewire\Components;
 
 use Livewire\Component;
 
-class Leftbar extends Component
+class Navlogo extends Component
 {
     public function render()
     {
-        return view('livewire.leftbar');
+        return view('livewire.components.navlogo');
     }
     public function gotohome(){
         return redirect()->to('/');
     }
-
 }

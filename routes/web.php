@@ -4,6 +4,7 @@
 
 // use App\Http\Livewire\Leftbar;
 use App\Http\Livewire\Pages\Dashboard;
+use App\Http\Livewire\Pages\Status;
 use App\Http\Livewire\Pages\Welcome;
 use Illuminate\Support\Facades\Route;
 
@@ -19,6 +20,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', Welcome::class);
+Route::get('/status/{casenumber}', Status::class);
 Route::get('/dashboard', Dashboard::class)->middleware(['auth'])->name('dashboard');
 
 require __DIR__.'/auth.php';

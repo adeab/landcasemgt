@@ -13,6 +13,6 @@ class Welcome extends Component
     }
     public function getCase()
     {
-        return view('livewire.components.status');
+        return redirect()->to('/status/'.$this->case_number);
     }
 }
