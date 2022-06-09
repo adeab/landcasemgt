@@ -1,8 +1,14 @@
+
 <x-guest-layout>
+
     <main class="main-content  mt-0">
+
         <div class="page-header align-items-start min-vh-100" style="background-image: url('https://img.wallpapersafari.com/desktop/1920/1080/29/96/E5iSkn.jpg');">
-          <span class="mask bg-gradient-dark opacity-6"></span>
+            <x-navlogo style="position: fixed; margin-left: 1rem;"/>
+            <span class="mask bg-gradient-dark opacity-6"></span>
+
           <div class="container my-auto">
+
             <div class="row">
               <div class="col-lg-4 col-md-8 col-12 mx-auto">
                 <div class="card z-index-0 fadeIn3 fadeInBottom">

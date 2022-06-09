@@ -2,8 +2,10 @@
     <div class="sidenav-header">
       <i class="fas fa-times p-3 cursor-pointer text-white opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
       <a class="navbar-brand m-0" href="#" wire:click="gotohome">
-        <img src="{{asset('images/bd-gov-logo.png')}}" class="navbar-brand-img h-100" alt="main_logo">
-        <span class="ms-1 font-weight-bold text-white">ভূমি মন্ত্রণালয়</span>
+        {{-- <img src="{{asset('images/bd-gov-logo.png')}}" > --}}
+        {{-- <x-project-logo class="navbar-brand-img h-100" alt="main_logo"/> --}}
+        <x-project-title class="leftbar-title font-weight-bold text-white"/>
+        {{-- <span class="ms-1 "> </span> --}}
       </a>
     </div>
     <hr class="horizontal light mt-0 mb-2">

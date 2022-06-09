@@ -2,7 +2,7 @@
     <div class="container-fluid py-1 px-3">
       <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
           @if (Request::path()!="/" AND !Str::contains(Request::path(), 'dashboard'))
-          <livewire:components.navlogo />
+            <x-navlogo/>
           @endif
         <div class="ms-md-auto pe-md-3 d-flex align-items-center">
           <ul class="navbar-nav  justify-content-end">

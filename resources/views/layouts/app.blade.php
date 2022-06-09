@@ -39,11 +39,13 @@
 </head>
 
 <body class="g-sidenav-show  bg-gray-200">
-    <livewire:topbar />
-
+    <x-navbar/>
+    @if (Str::contains(Request::path(), 'dashboard'))
+    <livewire:leftbar />
+    @endif
     {{$slot}}
 
-  <livewire:footer />
+    <x-footer/>
   @livewireScripts
 </body>
 
