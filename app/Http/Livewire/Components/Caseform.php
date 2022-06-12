@@ -2,6 +2,7 @@
 
 namespace App\Http\Livewire\Components;
 
+use App\Models\LandCase;
 use Livewire\Component;
 
 class Caseform extends Component
@@ -10,10 +11,15 @@ class Caseform extends Component
     public $number;
     public $description;
 
-
+    protected $rules=[
+        'number'=>'required',
+        'description'=>'',
+        'title'=>''
+    ];
 
     public function submit(){
-        // $validate_data = $this->validate();
+        $validate_data = $this->validate();
+        LandCase::create($validate_data);
     }
     public function render()
     {

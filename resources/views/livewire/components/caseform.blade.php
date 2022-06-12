@@ -1,33 +1,33 @@
 
     <div class="card ">
       <div class="card-header">
-        <h4 class="font-weight-bolder">নতুন কেইস</h4>
-        <p class="mb-0">ফর্মটি পূরণ করে জমা দিতে ক্লিক করুনঃ
+        <h4 class="font-weight-bolder">নতুন কেইস নিবন্ধন</h4>
+        <p class="mb-0">নতুন কেইস নিবন্ধন করতে ফর্মটি পূরণ করুনঃ
         </p>
       </div>
       <div class="card-body">
         <form wire:submit.prevent="submit" role="form">
           <div class="input-group input-group-outline mb-3">
 
-            <input type="text" placeholder="কেইস নাম্বার" class="form-control" required>
+            <input type="text" placeholder="কেইস নাম্বার" wire:model="number" class="form-control" required>
 
 
 
           </div>
-          {{-- @error('number')
+          @error('number')
             <div class="alert alert-danger alert-dismissible text-white" role="alert">
-                <span class="text-sm">{{$message}}</span> --}}
+                <span class="text-sm">{{$message}}</span>
                 {{-- <button type="button" class="btn-close text-lg py-3 opacity-10" data-bs-dismiss="alert" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button> --}}
-            {{-- </div>
-            @enderror --}}
+            </div>
+            @enderror
           <div class="input-group input-group-outline mb-3">
-            <input type="text" placeholder="কেইস শিরোনাম (যদি প্রযোজ্য হয়)" class="form-control">
+            <input type="text" placeholder="কেইস শিরোনাম (যদি প্রযোজ্য হয়)" wire:model="title" class="form-control">
           </div>
           <div class="input-group input-group-outline mb-3">
 
-            <textarea placeholder="কেইস বর্ণনা (যদি প্রযোজ্য হয়)" class="form-control"></textarea>
+            <textarea placeholder="কেইস বর্ণনা (যদি প্রযোজ্য হয়)" wire:model="description" class="form-control"></textarea>
           </div>
 
           <div class="text-center">
