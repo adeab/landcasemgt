@@ -13,5 +13,8 @@ class Leftbar extends Component
     public function gotohome(){
         return redirect()->to('/');
     }
+    public function gotopage($routename){
+        return redirect()->route($routename);
+    }
 
 }

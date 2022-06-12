@@ -1,0 +1,41 @@
+
+    <div class="card ">
+      <div class="card-header">
+        <h4 class="font-weight-bolder">নতুন কেইস</h4>
+        <p class="mb-0">ফর্মটি পূরণ করে জমা দিতে ক্লিক করুনঃ
+        </p>
+      </div>
+      <div class="card-body">
+        <form wire:submit.prevent="submit" role="form">
+          <div class="input-group input-group-outline mb-3">
+
+            <input type="text" placeholder="কেইস নাম্বার" class="form-control" required>
+
+
+
+          </div>
+          {{-- @error('number')
+            <div class="alert alert-danger alert-dismissible text-white" role="alert">
+                <span class="text-sm">{{$message}}</span> --}}
+                {{-- <button type="button" class="btn-close text-lg py-3 opacity-10" data-bs-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button> --}}
+            {{-- </div>
+            @enderror --}}
+          <div class="input-group input-group-outline mb-3">
+            <input type="text" placeholder="কেইস শিরোনাম (যদি প্রযোজ্য হয়)" class="form-control">
+          </div>
+          <div class="input-group input-group-outline mb-3">
+
+            <textarea placeholder="কেইস বর্ণনা (যদি প্রযোজ্য হয়)" class="form-control"></textarea>
+          </div>
+
+          <div class="text-center">
+            <button type="submit" class="btn btn-lg bg-gradient-primary btn-lg w-100 mt-4 mb-0">জমা দিন</button>
+            <button type="button" class="btn btn-lg bg-gradient-secondary btn-lg w-100 mt-4 mb-0" wire:click="$emitUp('switchMode')">বাতিল</button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+
