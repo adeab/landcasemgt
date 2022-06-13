@@ -8,11 +8,7 @@
       <div class="card-body">
         <form wire:submit.prevent="submit" role="form">
           <div class="input-group input-group-outline mb-3">
-
             <input type="text" placeholder="কেইস নাম্বার" wire:model="number" class="form-control" required>
-
-
-
           </div>
           @error('number')
             <div class="alert alert-danger alert-dismissible text-white" role="alert">
@@ -22,11 +18,27 @@
                 </button> --}}
             </div>
             @enderror
+
+
           <div class="input-group input-group-outline mb-3">
             <input type="text" placeholder="কেইস শিরোনাম (যদি প্রযোজ্য হয়)" wire:model="title" class="form-control">
           </div>
-          <div class="input-group input-group-outline mb-3">
 
+          <div class="input-group input-group-outline mb-3">
+            <select class="form-select form-control" wire:model="selected_type" aria-label="Default select example">
+                <option selected>কেইস এর ধরণ নির্বাচন করুন</option>
+                @foreach ($types as $type)
+                    <option value="{{$type->id}}">{{$type->name}}</option>
+                @endforeach
+            </select>
+          </div>
+          @error('selected_type')
+            <div class="alert alert-danger alert-dismissible text-white" role="alert">
+                <span class="text-sm">কেইস এর ধরণটি ঠিকভাবে নির্বাচন করুন!</span>
+            </div>
+          @enderror
+
+          <div class="input-group input-group-outline mb-3">
             <textarea placeholder="কেইস বর্ণনা (যদি প্রযোজ্য হয়)" wire:model="description" class="form-control"></textarea>
           </div>
 

@@ -8,4 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class CaseType extends Model
 {
     use HasFactory;
+
+    public function cases(){
+        return $this->hasMany(LandCase::class);
+    }
 }

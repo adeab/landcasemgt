@@ -15,4 +15,11 @@ class LandCase extends Model
     public function people(){
         return $this->hasMany(People::class);
     }
+    public function type(){
+        return $this->belongsTo(CaseType::class);
+    }
+    public function status(){
+        return $this->belongsTo(CaseStatus::class);
+    }
+
 }

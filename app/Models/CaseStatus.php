@@ -8,4 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class CaseStatus extends Model
 {
     use HasFactory;
+    public function cases(){
+        return $this->hasMany( LandCase::class);
+    }
 }
