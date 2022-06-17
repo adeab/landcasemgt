@@ -9,6 +9,9 @@ class People extends Model
 {
     use HasFactory;
 
+    protected $table = 'people';
+    protected $fillable = ['name','address','mobile','email','involvedAs','land_case_id'];
+
     public function landcase(){
         return $this->belongsTo(LandCase::class);
     }

@@ -4,13 +4,18 @@ namespace App\Http\Livewire\Components;
 
 use App\Models\LandCase;
 use Livewire\Component;
+use Livewire\WithPagination;
 
 class Caselist extends Component
 {
-    public $allcases;
+    use WithPagination;
+    // public $allcases;
+
+
     public function render()
     {
-        $this->allcases= LandCase::all();
-        return view('livewire.components.caselist');
+        return view('livewire.components.caselist', [
+            'allcases' => LandCase::orderBy('created_at', 'DESC')->paginate(10),
+        ]);
     }
 }

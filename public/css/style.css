@@ -13,9 +13,17 @@
 
 }
 .leftbar-title{
-    font-size: 1rem !important;
+    font-size: .9rem !important;
 
 }
 .homepage-content{
     margin-top: 9rem;
+}
+
+span.relative.z-0.inline-flex.shadow-sm.rounded-md {
+    display: none;
+}
+
+.hidden.sm\:flex-1.sm\:flex.sm\:items-center.sm\:justify-between {
+    padding-top: 0.5rem;
 }

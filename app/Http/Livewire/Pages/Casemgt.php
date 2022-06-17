@@ -7,8 +7,9 @@ use Livewire\Component;
 class Casemgt extends Component
 {
     public $list_mode = true;
+    public $message ='';
 
-    protected $listeners = ['switchMode' => 'switchMode'];
+    protected $listeners = ['switchMode' => 'switchMode', 'setMessage'=>'setMessage'];
 
     public function render()
     {
@@ -16,5 +17,11 @@ class Casemgt extends Component
     }
     public function switchMode(){
         $this->list_mode=!$this->list_mode;
+    }
+    public function setMessage($message){
+        $this->message=$message;
+    }
+    public function rmvMsg(){
+        $this->message='';
     }
 }

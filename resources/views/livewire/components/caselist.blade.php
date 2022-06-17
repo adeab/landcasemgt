@@ -40,17 +40,17 @@
                           </div>
                         </td>
                         <td>
-                          <p class="text-xs font-weight-bold mb-0">Manager</p>
-                          <p class="text-xs text-secondary mb-0">Organization</p>
+                          <p class="text-xs font-weight-bold mb-0">{{$case->type->name}}</p>
+                          {{-- <p class="text-xs text-secondary mb-0">Organization</p> --}}
                         </td>
                         <td class="align-middle text-center text-sm">
-                          <span class="badge badge-sm bg-gradient-success">Online</span>
+                            <p class="text-xs font-weight-bold mb-0">{{$case->status->title}}</p>
                         </td>
                         <td class="align-middle text-center">
-                          <span class="text-secondary text-xs font-weight-bold">23/04/18</span>
+                          <span class="text-secondary text-xs font-weight-bold">{{date('Y-m-d', strtotime($case->next_date))}}</span>
                         </td>
                         <td class="align-middle">
-                          <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
+                          <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit">
                             Edit
                           </a>
                         </td>
@@ -59,9 +59,11 @@
 
                   </tbody>
                 </table>
+
               </div>
             </div>
           </div>
         </div>
+        {{ $allcases->links() }}
       </div>
 
