@@ -30,10 +30,12 @@
                         </x-dropdown-link>
                     </form>
                   @else
-                      <a href="{{ route('login') }}" class="nav-link text-body font-weight-bold px-0">
-                        <i class="fa fa-sign-in me-sm-1"></i>
-                        <span class="d-sm-inline d-none">লগ ইন</span>
-                      </a>
+                      @if (Request::path()!="/")
+                        <a href="{{ route('login') }}" class="nav-link text-body font-weight-bold px-0">
+                            <i class="fa fa-sign-in me-sm-1"></i>
+                            <span class="d-sm-inline d-none">লগ ইন</span>
+                        </a>
+                     @endif
                       @if (Route::has('register'))
                         <a href="{{ route('register') }}" class="nav-link text-body font-weight-bold px-0" style="margin-left: 5px;">
                             <i class="fa fa-user me-sm-1"></i>

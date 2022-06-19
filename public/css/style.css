@@ -2,8 +2,12 @@
     height: 8rem;
 }
 .logo-title{
+    font-size: 2rem !important;
+    /* padding: 1rem; */
+}
+.logo-title-english{
     font-size: 2.5rem !important;
-    padding: 1rem;
+    /* padding: 1rem; */
 }
 .bd-gov-logo-nav{
     height: 3rem;
@@ -14,11 +18,41 @@
 }
 .leftbar-title{
     font-size: .9rem !important;
+}
+.homepage-card{
+    /* margin-top: 9rem; */
+    margin-top: 1.5rem;
+    width: 50vw;
 
 }
-.homepage-content{
-    margin-top: 9rem;
+strong.outlined-text{
+    border: 1px solid;
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-size: larger;
+    margin-left: .5rem;
 }
+.clickable-row{
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .logo-title{
+        font-size: 1rem !important;
+        /* padding: 1rem; */
+    }
+    .logo-title-english{
+        font-size: 1.5rem !important;
+        /* padding: 1rem; */
+    }
+    .homepage-card{
+      width: 100%;
+    }
+    .justify-content-end{
+        justify-content: flex-start !important;
+    }
+  }
 
 span.relative.z-0.inline-flex.shadow-sm.rounded-md {
     display: none;

@@ -25,7 +25,7 @@
               <i class="material-icons opacity-10">table_view</i>
             </div>
             <span class="nav-link-text ms-1">
-               কেইস</span>
+               মামলা</span>
           </a>
         </li>
         <li class="nav-item">

@@ -17,5 +17,11 @@ class Caselist extends Component
         return view('livewire.components.caselist', [
             'allcases' => LandCase::orderBy('created_at', 'DESC')->paginate(10),
         ]);
+
+
+    }
+    public function gotocase($case_number, $case_type_id)
+    {
+        return redirect()->to('/status?case_number='.$case_number.'&case_type='.$case_type_id);
     }
 }

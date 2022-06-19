@@ -5,10 +5,10 @@
               <div class="bg-gradient-primary shadow-primary border-radius-lg pt-4 pb-3">
                 <div class="row">
                     <div class="col-6 d-flex align-items-center">
-                        <h6 class="text-white text-capitalize ps-3">কেইস তালিকা</h6>
+                        <h6 class="text-white text-capitalize ps-3">মামলা তালিকা</h6>
                     </div>
                     <div class="col-6 text-end">
-                      <a class="btn bg-gradient-dark mb-0 mx-3" href="#" wire:click="$emitUp('switchMode')"> <i class="material-icons text-sm">add</i>&nbsp;&nbsp;নতুন কেইস</a>
+                      <a class="btn bg-gradient-dark mb-0 mx-3" href="#" wire:click="$emitUp('switchMode')"> <i class="material-icons text-sm">add</i>&nbsp;&nbsp;নতুন মামলা</a>
                     </div>
                   </div>
 
@@ -17,19 +17,19 @@
             </div>
             <div class="card-body px-0 pb-2">
               <div class="table-responsive p-0">
-                <table class="table align-items-center mb-0">
+                <table class="table align-items-center mb-0 table-hover">
                   <thead>
                     <tr>
-                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">কেইস নাম্বার</th>
-                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">কেইস ধরণ</th>
+                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">মামলা নাম্বার</th>
+                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">মামলা ধরণ</th>
                       <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">বর্তমান অবস্থা</th>
                       <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">পরবর্তী তারিখ</th>
-                      <th class="text-secondary opacity-7"></th>
+                      {{-- <th class="text-secondary opacity-7"></th> --}}
                     </tr>
                   </thead>
                   <tbody>
                     @foreach ($allcases as $case)
-                    <tr>
+                    <tr class="clickable-row" wire:click="gotocase({{$case->number}},{{$case->case_type_id}})">
                         <td>
                           <div class="d-flex px-2 py-1">
 
@@ -49,11 +49,11 @@
                         <td class="align-middle text-center">
                           <span class="text-secondary text-xs font-weight-bold">{{date('Y-m-d', strtotime($case->next_date))}}</span>
                         </td>
-                        <td class="align-middle">
+                        {{-- <td class="align-middle">
                           <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit">
                             Edit
                           </a>
-                        </td>
+                        </td> --}}
                       </tr>
                     @endforeach
 

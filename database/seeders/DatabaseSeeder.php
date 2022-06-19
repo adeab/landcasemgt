@@ -5,6 +5,7 @@ namespace Database\Seeders;
 use Carbon\Carbon;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
 
 class DatabaseSeeder extends Seeder
 {
@@ -15,10 +16,17 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+        DB::table('users')->insert([
+            'name' => "Demo Admin",
+            'email' => "admin@demo.com",
+            'password' => Hash::make('password'),
+            'created_at' => Carbon::now()
+        ]);
         $case_types = [
             "ল্যান্ডমার্ক ট্রাইবুনাল মামলা",
             "ডিগ্রি মামলা",
-            "১৫০ ধারা মামলা"
+            "১৫০ ধারা মামলা",
+            "অন্যান্য"
 
         ];
         $case_statuses =[

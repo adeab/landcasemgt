@@ -44,7 +44,8 @@ class Caseform extends Component
             'mobile'=>'',
             'address'=>'',
             'email'=>'',
-            'involvedAs'=>'plaintiff'
+            'involvedAs'=>'plaintiff',
+            'guardian'=>''
             ]
         ];
         $this->defendants = [
@@ -53,7 +54,8 @@ class Caseform extends Component
             'mobile'=>'',
             'address'=>'',
             'email'=>'',
-            'involvedAs'=>'defendant'
+            'involvedAs'=>'defendant',
+            'guardian'=>''
             ]
         ];
 
@@ -78,7 +80,8 @@ class Caseform extends Component
             'mobile'=>'',
             'address'=>'',
             'email'=>'',
-            'involvedAs'=>'plaintiff'
+            'involvedAs'=>'plaintiff',
+            'guardian'=>''
             ];
     }
     public function rmvPlaintiff($index){
@@ -92,7 +95,8 @@ class Caseform extends Component
             'mobile'=>'',
             'address'=>'',
             'email'=>'',
-            'involvedAs'=>'defendant'
+            'involvedAs'=>'defendant',
+            'guardian'=>''
             ];
     }
     public function rmvDefendants($index){

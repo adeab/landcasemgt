@@ -22,7 +22,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', Welcome::class)->name('landing');
-Route::get('/status/{casenumber}', Status::class);
+Route::get('/status', Status::class);
 
 Route::prefix('dashboard')->middleware(['auth'])->group(function () {
     Route::get('/case-management', Casemgt::class)->name('casemgt');

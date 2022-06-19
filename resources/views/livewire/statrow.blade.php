@@ -6,7 +6,7 @@
             <i class="material-icons opacity-10">topic</i>
           </div>
           <div class="text-end pt-1">
-            <p class="text-sm mb-0 text-capitalize">আজকের কেইস</p>
+            <p class="text-sm mb-0 text-capitalize">আজকের মামলা</p>
             <h4 class="mb-0">১০</h4>
           </div>
         </div>
