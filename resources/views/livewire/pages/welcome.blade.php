@@ -41,7 +41,7 @@
                     </div>
                 </form>
             @else
-            <p class="sub-title">আপনার তথ্য দিয়ে প্রবেশ করুন</p>
+                {{-- <p class="sub-title">আপনার তথ্য দিয়ে প্রবেশ করুন</p> --}}
                 <x-login-form/>
             @endif
 

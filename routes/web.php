@@ -20,8 +20,10 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', Welcome::class)->name('landing');
+Route::get('/', function () {
+    return view('welcome');
+})->name('landing');
+// Route::get('/', Welcome::class)->name('landing');
 Route::get('/status', Status::class);
 
 Route::prefix('dashboard')->middleware(['auth'])->group(function () {

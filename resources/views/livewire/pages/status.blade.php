@@ -148,6 +148,7 @@
             </div>
           </div>
           <br>
+          <p class=""><span class="font-weight-bold">অর্থবছরঃ </span>{{$case->fiscal_year}}</p>
           <p class=""><span class="font-weight-bold">মামলার শিরোনামঃ </span>{{$case->title?$case->title:'নাই'}}</p>
           <p class=""><span class="font-weight-bold">মামলার সংক্ষিপ্ত বিবরণঃ</p>
           <p class="container">{{$case->description?$case->description:'নাই'}}</p>

@@ -16,7 +16,7 @@ class AddColumnsInCaseTable extends Migration
         Schema::table('land_cases', function (Blueprint $table) {
             //
             $table->integer('fiscal_year');
-            $table->timestamp('next_date');
+            $table->timestamp('next_date')->nullable();
             $table->integer('case_status_id');
             $table->integer('case_type_id');
 
