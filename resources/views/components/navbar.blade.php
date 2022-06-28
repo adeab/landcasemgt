@@ -1,10 +1,11 @@
-<nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl" id="navbarBlur" navbar-scroll="true">
+@if (Request::path()!="/" )
+<nav class="navbar top-nav navbar-main navbar-expand-lg px-0 shadow-none" id="navbarBlur" navbar-scroll="true">
     <div class="container-fluid py-1 px-3">
       <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
-          @if (Request::path()!="/" AND !Str::contains(Request::path(), 'dashboard'))
-            <x-navlogo/>
-          @endif
+        {{-- <x-navlogo-section/> --}}
+
         <div class="ms-md-auto pe-md-3 d-flex align-items-center">
+
           <ul class="navbar-nav  justify-content-end">
             @auth
             <li class="nav-item d-flex align-items-center">
@@ -15,6 +16,18 @@
                 </a>
                 @endif
             </li>
+            @if (Str::contains(Request::path(), 'dashboard'))
+            <li class="nav-item d-xl-none ps-3 d-flex align-items-center">
+                <a href="javascript:;" class="nav-link text-body p-0" id="iconNavbarSidenav">
+                  <div class="sidenav-toggler-inner">
+                    <i class="sidenav-toggler-line"></i>
+                    <i class="sidenav-toggler-line"></i>
+                    <i class="sidenav-toggler-line"></i>
+                  </div>
+                </a>
+              </li>
+            @endif
+
             @endauth
               <li class="nav-item d-flex align-items-center">
                   @auth
@@ -49,3 +62,19 @@
       </div>
     </div>
   </nav>
+{{-- @endif --}}
+  {{-- @if (!Str::contains(Request::path(), 'dashboard')) --}}
+
+
+    {{-- <div class="row">
+        <div class="col">
+            "জনসেবার জন্য প্রশাসন<br>জনবান্ধব ভূমি সেবা"
+        </div>
+        <div class="col">
+
+        </div>
+    </div> --}}
+
+
+  @endif
+

@@ -4,7 +4,8 @@
     <main class="main-content  mt-0">
 
         <div class="page-header align-items-start min-vh-100" style="background-image: url('https://img.wallpapersafari.com/desktop/1920/1080/29/96/E5iSkn.jpg');">
-            <x-navlogo style="position: fixed; margin-left: 1rem;"/>
+            {{-- <x-navlogo /> --}}
+            <x-navlogo-section style="position: fixed; margin: 1rem; z-index: 1000;"/>
             <span class="mask bg-gradient-dark opacity-6"></span>
 
           <div class="container my-auto">

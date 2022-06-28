@@ -1,7 +1,8 @@
+
 <div class="card homepage-card" >
     <div class="card-header">
         <div class="d-flex">
-            <button class="btn {{$showForm?'bg-gradient-info':'bg-gradient-light'}}  px-3 mb-2" wire:click="$toggle('showForm')">নাগরকি কর্ণার</button>
+            <button class="btn {{$showForm?'bg-gradient-info':'bg-gradient-light'}}  px-3 mb-2" wire:click="$toggle('showForm')">নাগরিক কর্ণার</button>
             @guest
             <button class="btn {{!$showForm?'bg-gradient-info':'bg-gradient-light'}}  px-3 mb-2 ms-2" wire:click="$toggle('showForm')">অফিস কর্ণার</button>
             @endguest

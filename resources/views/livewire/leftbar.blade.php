@@ -54,5 +54,7 @@
 
 
       </ul>
+      <x-credit-leftbar/>
     </div>
+
   </aside>

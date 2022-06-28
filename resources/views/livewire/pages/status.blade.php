@@ -24,7 +24,7 @@
     </div>
 
 </div> --}}
-<div class="d-flex flex-column justify-content-center align-items-center homepage-content">
+<div class="d-flex flex-column justify-content-center align-items-center homepage-content-custom main-content">
 <div class="card">
     <div class="card-body">
         @if($case)
@@ -168,5 +168,6 @@
 
     </div>
 </div>
+<x-credit class="container text-center py-3"/>
 </div>
 
