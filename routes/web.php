@@ -6,6 +6,7 @@
 
 use App\Http\Livewire\Pages\Casemgt;
 use App\Http\Livewire\Pages\Dashboard;
+use App\Http\Livewire\Pages\Searchcase;
 use App\Http\Livewire\Pages\Status;
 use App\Http\Livewire\Pages\Welcome;
 use Illuminate\Support\Facades\Route;
@@ -20,14 +21,15 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', function () {
-    return view('welcome');
-})->name('landing');
-// Route::get('/', Welcome::class)->name('landing');
+// Route::get('/', function () {
+//     return view('welcome');
+// })->name('landing');
+Route::get('/', Welcome::class)->name('landing');
+Route::get('/search-case', Searchcase::class);
 Route::get('/status', Status::class);
 
 Route::prefix('dashboard')->middleware(['auth'])->group(function () {
-    Route::get('/case-management', Casemgt::class)->name('casemgt');
+    Route::get('/case-management/list', Casemgt::class)->name('caselist');
     Route::get('/overview', Dashboard::class)->name('dashboard');
 });
 require __DIR__.'/auth.php';

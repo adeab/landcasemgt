@@ -1,69 +1,98 @@
-<!--
-=========================================================
-* Material Dashboard 2 - v=3.0.2
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-dashboard
-* Copyright 2022 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://www.creative-tim.com/license)
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
--->
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="apple-touch-icon" sizes="76x76" href="{{asset('material_assets/img/apple-icon.png')}}">
-  <link rel="icon" type="image/png" href="{{asset('material_assets/img/favicon.png')}}">
-  <title>
-    Miscase Management System
-  </title>
-  <!--     Fonts and icons     -->
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
-  <!-- Nucleo Icons -->
-  <link href="{{asset('material_assets/css/nucleo-icons.css')}}" rel="stylesheet" />
-  <link href="{{asset('material_assets/css/nucleo-svg.css')}}" rel="stylesheet" />
-  <!-- Font Awesome Icons -->
-  <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
-  <!-- Material Icons -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
-  <!-- CSS Files -->
-  <link id="pagestyle" href="{{asset('material_assets/css/material-dashboard.css?v=3.0.2')}}" rel="stylesheet" />
-  <link id="pagestyle" href="{{asset('css/style.css')}}" rel="stylesheet" />
-  @livewireStyles
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+    <link id="pagestyle" href="{{ asset('css/style.css') }}" rel="stylesheet" />
+    @livewireStyles
+
 </head>
 
-<body class="g-sidenav-show  bg-gray-200">
-    <x-navbar/>
-    @if (Str::contains(Request::path(), 'dashboard'))
-    <livewire:leftbar />
-    @endif
-    {{$slot}}
-    <x-footer/>
-  @livewireScripts
-  <script src="{{asset('material_assets/js/core/popper.min.js')}}"></script>
-  <script src="{{asset('material_assets/js/core/bootstrap.min.js')}}"></script>
-  <script src="{{asset('material_assets/js/plugins/perfect-scrollbar.min.js')}}"></script>
-  <script src="{{asset('material_assets/js/plugins/smooth-scrollbar.min.js')}}"></script>
-  <script>
-    var win = navigator.platform.indexOf('Win') > -1;
-    if (win && document.querySelector('#sidenav-scrollbar')) {
-      var options = {
-        damping: '0.5'
-      }
-      Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
-    }
-  </script>
-  <!-- Github buttons -->
-  <script async defer src="https://buttons.github.io/buttons.js"></script>
-  <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
-  <script src="{{asset('material_assets/js/material-dashboard.min.js?v=3.0.2')}}"></script>
+<body class="mainbody">
+    <div class="d-flex justify-content-center">
+        <div class="card homepage-card">
+            <div class="card-header homepage-card-header">
+                <div class="row col-12">
+                    <div class="col-md-6">
+                        ভূমি মন্ত্রণালয়, গণপ্রজাতন্ত্রী বাংলাদেশ সরকার
+                    </div>
+                    <div class="col-md-6 right-aligned-content">
+                        @livewire('components.currentday')
+                    </div>
+                </div>
+            </div>
+            <div class="card-header homepage-card-header2">
+                <div class="row col-12">
+                    <div class="col-md-6">
+                        <div class="d-flex flex-row align-items-center">
+                            <x-land-logo class="logo-home"/>
+                            <x-project-title class="title-home"/>
+                        </div>
+                    </div>
+                    <div class="col-md-6 right-aligned-content">
+                        <div class="d-flex flex-row-reverse align-items-center">
+                            <x-project-logo class="logo-home"/>
+                            <x-credit style="padding: 1rem;"/>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+            <div class="nav-section">
+                <x-navbar-home/>
+            </div>
+            <div class="card-body homepage-card-body text-center">
+                <div class="d-flex justify-content-center">
+                    {{ $slot }}
+                </div>
+            </div>
+            <div class="card-footer text-center upper-footer">
+                <div class="row upper-footer-row">
+                    <div class="col-md-3 footer-column text-center">
+                        <div class="fo-title"><h2>গুরুত্বপূর্ণ লিঙ্ক</h2></div>
+                        <div class="foo-content text-center">
+                            <a target="_blank" href="www.bangladesh.gov.bd">www.bangladesh.gov.bd</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 footer-column text-center">
+                        <div class="fo-title"><h2>সামাজিক যোগাযোগ </h2></div>
+
+                        <div class="foo-content text-center">
+                            <a class="social-icons facebook" target="_blank" href="http://www.facebook.com/minland.gov.bd"><i class="fa fa-facebook"></i></a>
+                            <a class="social-icons youtube" target="_blank" href="https://www.youtube.com/channel/UCBlCPkpMK00tcPcdR-DTxrw"><i class="fa fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 footer-column text-center">
+                        <div class="fo-title"><h2>পরিকল্পনা ও বাস্তবায়নে  </h2></div>
+
+                        <div class="foo-content text-center">
+                            <a href="https://minland.gov.bd/" target="_blank"><img src="https://land.gov.bd/wp-content/themes/land-portal/images/icons/land.png" alt=""></a>
+                            <a href="https://a2i.gov.bd/" target="_blank"><img src="https://land.gov.bd/wp-content/themes/land-portal/images/icons/a2i.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 footer-column text-center">
+                        <div class="fo-title"><h2>কারিগরি সহায়তায়</h2></div>
+                        <div class="foo-content text-center">
+                            <a href="https://taqitizar.com/" target="_blank"><img class="img-fluid" src="https://taqitizar.com/wp-content/uploads/2021/12/cropped-Shop-logo.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer text-center lower-footer">
+                Copyrights © 2022 All Rights Reserved Ministry of Land, Government of the People's Republic of Bangladesh
+            </div>
+        </div>
+    </div>
+    @livewireScripts
 </body>
 
 </html>
-

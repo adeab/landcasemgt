@@ -13,7 +13,8 @@ class Casemgt extends Component
 
     public function render()
     {
-        return view('livewire.pages.casemgt');
+        return view('livewire.pages.casemgt')
+        ->layout('layouts.admin');
     }
     public function switchMode(){
         $this->list_mode=!$this->list_mode;

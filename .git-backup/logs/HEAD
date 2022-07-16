@@ -1,0 +1,7 @@
+0000000000000000000000000000000000000000 b4ddfb290171e50e712882bdc4318073e25c2e1e Rafaeatul Kabir Adeab <ASUS@DESKTOP-8KMJ31L.(none)> 1655040452 +0600	clone: from https://github.com/adeab/landcasemgt.git
+b4ddfb290171e50e712882bdc4318073e25c2e1e 1ec3cd39bfe3c3091f12c1ffb24a9654bf92af5b adeab <adeab@live.com> 1655044828 +0600	commit: creating case with model
+1ec3cd39bfe3c3091f12c1ffb24a9654bf92af5b 9ef185f2dfd7009b5a4260d04c079d71d6929f98 adeab <adeab@live.com> 1655090452 +0600	commit: continue working on new entry
+9ef185f2dfd7009b5a4260d04c079d71d6929f98 e1fb717489ceb34989ca4d07d70dfc189786e172 adeab <adeab@live.com> 1655476085 +0600	commit: add and see in list
+e1fb717489ceb34989ca4d07d70dfc189786e172 56510238c1aba70007f67a0af14403f1e37c0397 adeab <adeab@live.com> 1655613881 +0600	commit: case add and view
+56510238c1aba70007f67a0af14403f1e37c0397 3f259a14b0e397c3ec0bdb5e172b99e80401d751 adeab <adeab@live.com> 1655635676 +0600	commit: redevelop welcome nested structure
+3f259a14b0e397c3ec0bdb5e172b99e80401d751 cec3e900637c9e4780f56317e34dd01dcce4988e adeab <adeab@live.com> 1656388083 +0600	commit: new design

@@ -1,3 +1,4 @@
+<div class="container">
 <form role="form" class="text-start" method="POST" action="{{ route('login') }}">
     @csrf
     <div class="input-group input-group-outline my-3">
@@ -11,7 +12,7 @@
       <label class="form-check-label mb-0 ms-2" for="rememberMe">মনে রাখুন</label>
     </div>
     <div class="text-center">
-      <button type="submit" class="btn bg-gradient-primary w-100 my-4 mb-2">প্রবেশ করুন</button>
+      <button type="submit" class="btn btn-primary w-100 my-4 mb-2">প্রবেশ করুন</button>
     </div>
     @if (Route::has('password.request'))
     <p class="text-xs text-center">
@@ -23,3 +24,6 @@
 
 
   </form>
+  <a href="{{url('/')}}" class="btn btn-danger" style="width: 100%">বাতিল</a>
+
+</div>

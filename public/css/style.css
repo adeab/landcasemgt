@@ -1,3 +1,120 @@
+.mainbody{
+    background-image: url('../images/background.jpg');
+    /* margin: -1px; */
+}
+
+.homepage-card .card-body{
+    background-color: #8DC642;
+}
+.homepage-card-header2{
+    background-color: #EEFBEA;
+}
+.homepage-card{
+    height: 100vh;
+}
+.homepage-card,
+.homepage-card-header,
+.homepage-card-header2 {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    border-radius: 0 !important;
+
+}
+.homepage-card-header,
+.lower-footer{
+    background-color: #099F19;
+    color: white;
+
+}
+.homepage-card-header2{
+    border: none;
+
+}
+.right-aligned-content{
+    text-align: right !important;
+}
+.logo-home{
+    height: 6.5rem;
+}
+.title-home{
+    font-size: 1.4rem !important;
+    font-weight: 800;
+    padding: .5rem;
+}
+.center-element{
+    width: 25rem;
+}
+.upper-footer{
+    background-color: #ACECB6;
+}
+.call-section{
+    background-color: #296D3B;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+.home-button{
+    padding: 1rem;
+    margin-bottom: 1rem;
+    color: white;
+    border: none;
+    /* background-color: grey; */
+    font-size: x-large;
+    border-radius: 0 2.5rem;
+}
+.citizen-btn{
+    background-color: #1E3F21;
+}
+.ofc-btn{
+    background-color: #054777;
+}
+.home-card{
+    border: none;
+}
+.home-card .card-body{
+    /* background-color: #8DC642; */
+    margin-bottom: -1rem;
+    /* background-color: #8DC642; */
+    margin-top: -1rem;
+    padding: 2.5rem;
+
+}
+.footer-column{
+    padding: 1rem;
+}
+.fo-title h2{
+    font-size: small;
+    color: #592E80;
+    font-weight: 800;
+    padding: .5rem;
+}
+.social-icons{
+    color: white;
+    border-radius: 3rem;
+
+}
+.facebook{
+    padding: 1rem 1.3rem;
+    background-color: #129AF6;
+
+}
+.youtube{
+    padding: 1rem;
+    background-color: red;
+
+
+}
+.leftbar-title{
+    font-size: .8rem !important;
+}
+
+
+
+
+
+
+
+
 .homepage-content-custom{
     margin-top: 2rem;
 }
@@ -5,13 +122,8 @@
     height: 6rem;
     margin-bottom: 10px;
 }
-.land-logo-home{
-    box-shadow: 2px 2px 5px 5px;
-    margin-bottom: 1rem;
-}
-.logo-title{
-    font-size: 1.8rem !important;
-}
+
+
 .logo-title-english{
     font-size: 2.3rem !important;
 }
@@ -25,9 +137,7 @@
 .nav-title{
     font-size: 1.3rem !important;
 }
-.leftbar-title{
-    font-size: .9rem !important;
-}
+
 .homepage-card{
     margin-top: 1.5rem;
     width: 50vw;
