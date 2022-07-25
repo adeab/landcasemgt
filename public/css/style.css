@@ -108,130 +108,19 @@
     font-size: .8rem !important;
 }
 
-
-
-
-
-
-
-
-.homepage-content-custom{
-    margin-top: 2rem;
-}
-.bd-gov-logo{
-    height: 6rem;
-    margin-bottom: 10px;
-}
-
-
-.logo-title-english{
-    font-size: 2.3rem !important;
-}
-.bd-gov-logo-nav{
-    height: 5rem;
-    padding-bottom: 1rem;
-}
-.land-logo-nav{
-    height: 3rem;
-}
-.nav-title{
-    font-size: 1.3rem !important;
-}
-
-.homepage-card{
-    margin-top: 1.5rem;
-    width: 50vw;
-}
-.top-nav{
-    background: linear-gradient(90deg, rgba(147,214,231,1) 31%, rgba(240,242,245,1) 84%);
-    color: #050C6A;
-}
-.banner{
-    /* background-color: #93D6E7; */
-    text-align: center;
-    color: #050C6A;
-    font-weight: bold;
-    font-size: xx-large;
-
-}
-.main-content{
-    margin-bottom: 4rem;
-}
-.left-nav-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-
-  }
-
-.left-nav-ul li {
-    float: left;
-  }
-
-/* .left-nav-ul  li a {
-    display: block;
-    text-decoration: none;
-  } */
-
-strong.outlined-text{
-    border: 1px solid;
-    padding: 0.5rem;
-    border-radius: 5px;
-    font-size: larger;
-    margin-left: .5rem;
-}
-.footer-style{
-    background-color: #F0F2F5;
-    padding-top: .8rem;
-}
-.clickable-row{
-    cursor: pointer;
-}
-/* .body-content{
-    height: 100vh;
-} */
-
-/* @media only screen and (min-width: 1680px) {
-    .body-content{
-        height: 62vh;
+@media only screen and (max-width: 600px) {
+    .logo-home{
+        height: 4rem;
     }
-} */
-@media only screen and (max-width: 768px) {
-    .land-logo-home{
-        height: 6rem;
+    .title-home{
+        font-size: 1.2rem !important;
     }
-    .footer-row{
-        text-align: center;
-    }
-    /* For mobile phones: */
-    .logo-title{
-        font-size: 1rem !important;
-        /* padding: 1rem; */
-    }
-    .logo-title-english{
-        font-size: 1.5rem !important;
-        /* padding: 1rem; */
-    }
-    .homepage-card{
-      width: 100%;
-    }
-    .justify-content-end{
-        justify-content: flex-start !important;
-    }
-    .banner{
-        font-size: larger;
-
-    }
-    .banner-logo{
-        height:4.5rem;
+    .right-aligned-content, .left-aligned-content{
+        text-align: center !important;
     }
   }
 
-span.relative.z-0.inline-flex.shadow-sm.rounded-md {
-    display: none;
-}
 
-.hidden.sm\:flex-1.sm\:flex.sm\:items-center.sm\:justify-between {
-    padding-top: 0.5rem;
-}
+
+
+/*

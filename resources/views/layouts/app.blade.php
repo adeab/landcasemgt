@@ -20,7 +20,7 @@
         <div class="card homepage-card">
             <div class="card-header homepage-card-header">
                 <div class="row col-12">
-                    <div class="col-md-6">
+                    <div class="col-md-6 left-aligned-content">
                         ভূমি মন্ত্রণালয়, গণপ্রজাতন্ত্রী বাংলাদেশ সরকার
                     </div>
                     <div class="col-md-6 right-aligned-content">
@@ -31,7 +31,7 @@
             <div class="card-header homepage-card-header2">
                 <div class="row col-12">
                     <div class="col-md-6">
-                        <div class="d-flex flex-row align-items-center">
+                        <div class="d-flex flex-row align-items-center left-aligned-content">
                             <x-land-logo class="logo-home"/>
                             <x-project-title class="title-home"/>
                         </div>
@@ -82,13 +82,13 @@
                     <div class="col-md-3 footer-column text-center">
                         <div class="fo-title"><h2>কারিগরি সহায়তায়</h2></div>
                         <div class="foo-content text-center">
-                            <a href="https://taqitizar.com/" target="_blank"><img class="img-fluid" src="https://taqitizar.com/wp-content/uploads/2021/12/cropped-Shop-logo.png" alt=""></a>
+                            <a href="https://taqitizar.com/" target="_blank"><img class="img-fluid" src="{{asset('images/taqi-logo.png')}}" alt=""></a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="card-footer text-center lower-footer">
-                Copyrights © 2022 All Rights Reserved Ministry of Land, Government of the People's Republic of Bangladesh
+               <x-copyright/>
             </div>
         </div>
     </div>
