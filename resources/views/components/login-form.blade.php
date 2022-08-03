@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container login-section">
 <form role="form" class="text-start" method="POST" action="{{ route('login') }}">
     @csrf
     <div class="input-group input-group-outline my-3">

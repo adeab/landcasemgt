@@ -4,6 +4,7 @@
 
 // use App\Http\Livewire\Leftbar;
 
+use App\Http\Livewire\Components\Caseform;
 use App\Http\Livewire\Pages\Casemgt;
 use App\Http\Livewire\Pages\Dashboard;
 use App\Http\Livewire\Pages\Searchcase;
@@ -30,6 +31,7 @@ Route::get('/status', Status::class);
 
 Route::prefix('dashboard')->middleware(['auth'])->group(function () {
     Route::get('/case-management/list', Casemgt::class)->name('caselist');
+    Route::get('/case-management/create', Caseform::class)->name('casecreate');
     Route::get('/overview', Dashboard::class)->name('dashboard');
 });
 require __DIR__.'/auth.php';

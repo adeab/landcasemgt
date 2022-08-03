@@ -105,6 +105,7 @@ class Caseform extends Component
     }
     public function render()
     {
-        return view('livewire.components.caseform');
+        return view('livewire.components.caseform')
+        ->layout('layouts.admin');
     }
 }

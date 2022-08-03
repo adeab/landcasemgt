@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container login-section">
     <p class="sub-title">আপনার মামলা এর নাম্বার দিয়ে বর্তমান অবস্থা দেখুন</p>
     <form role="form" class="text-start" wire:submit.prevent="getCase">
         <div class="row">

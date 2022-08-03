@@ -1,8 +1,8 @@
 <span>
-    <div class="bg-gradient-primary shadow-primary border-radius-lg pt-4 pb-3">
+    <div class="bg-gradient-primary header-div pt-4 pb-3">
         <div class="row">
-            <div class="col-6 d-flex align-items-center">
-                <h6 class="text-white text-capitalize ps-3">নতুন মামলা নিবন্ধন</h6>
+            <div class="col-12 d-flex align-items-center">
+                <h6 class="text-white">নতুন মামলা নিবন্ধন</h6>
             </div>
 
         </div>
@@ -211,8 +211,8 @@
 
     </div>
     <div class="text-center">
-        <button type="submit" class="btn btn-lg bg-gradient-primary btn-lg w-100 mt-4 mb-0">জমা দিন</button>
-        <button type="button" class="btn btn-lg bg-gradient-secondary btn-lg w-100 mt-4 mb-0" wire:click="$emitUp('switchMode')">বাতিল</button>
+        <button type="submit" class="btn  bg-gradient-primary  w-100 mt-4 mb-0">জমা দিন</button>
+        <button type="button" class="btn  bg-gradient-secondary  w-100 mt-4 mb-0" wire:click="$emitUp('switchMode')">বাতিল</button>
       </div>
     </form>
 </span>

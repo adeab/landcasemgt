@@ -1,7 +1,7 @@
 <div class="card center-element home-card">
     <div class="card-body">
         <div class="row">
-    <a target="_blank" href="https://hotline.land.gov.bd/" class="call-section"><img src="{{asset('images/call-center.png')}}"></a>
+    {{-- <a target="_blank" href="https://hotline.land.gov.bd/" class="call-section"><img src="{{asset('images/call-center.png')}}"></a> --}}
 </div>
     <div class="row">
         <button class="home-button citizen-btn">

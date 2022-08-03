@@ -1,10 +1,45 @@
-.mainbody{
-    background-image: url('../images/background.jpg');
-    /* margin: -1px; */
-}
+.stat-filter-select{
+    /* border: 1px solid #fff; */
+    background-color: transparent;
+    color: white;
+    border: none;
 
+}
+.stat-filter-select option{
+    /* border: 1px solid #fff; */
+    /* background-color: transparent; */
+    color: black;
+    /* border: none; */
+
+}
+.header-div{
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.homepage-card-body{
+    background-image: url('../images/background.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mainbody{
+    /* background-color: #8DC642; */
+    background: url('../images/ivancik.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+.login-section{
+    /* background-color: #8DC642; */
+    background-color: #8dc642e3;
+    padding: 2rem;
+    border-radius: 1rem;
+}
 .homepage-card .card-body{
-    background-color: #8DC642;
+    /* background-color: #8DC642; */
+    background-color: #0000;
 }
 .homepage-card-header2{
     background-color: #EEFBEA;
@@ -34,12 +69,13 @@
     text-align: right !important;
 }
 .logo-home{
-    height: 6.5rem;
+    height: 6rem;
+    padding-bottom: .3rem;
 }
 .title-home{
     font-size: 1.4rem !important;
     font-weight: 800;
-    padding: .5rem;
+    /* padding: .5rem; */
 }
 .center-element{
     width: 25rem;
@@ -48,7 +84,9 @@
     background-color: #ACECB6;
 }
 .call-section{
-    background-color: #296D3B;
+    /* background-color: #296D3B;
+     */
+    background-color: #8DC642;
     border-radius: 10px;
     padding: 1rem;
     margin: 1rem 0;
@@ -108,9 +146,14 @@
     font-size: .8rem !important;
 }
 
+.landing-navbar{
+    justify-content: center !important;
+}
+
 @media only screen and (max-width: 600px) {
     .logo-home{
-        height: 4rem;
+        height: 7rem;
+        padding: .5rem;
     }
     .title-home{
         font-size: 1.2rem !important;
