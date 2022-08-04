@@ -68,8 +68,9 @@ class Caseform extends Component
             $person['land_case_id']=$caseid;
             People::create($person);
         }
-        $this->emitUp('setMessage', 'মামলাটি নিবন্ধিত হয়েছে!');
-        $this->emitUp('switchMode');
+        // $this->emitUp('setMessage', 'মামলাটি নিবন্ধিত হয়েছে!');
+        // $this->emitUp('switchMode');
+        return redirect()->route('caselist');
 
 
     }
