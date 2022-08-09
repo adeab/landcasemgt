@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-
+    <title>উপজেলা ভূমি অফিস, গৌরনদী, বরিশাল</title>
+    <link rel="icon" type="image/png" href="{{asset('images/bd-gov-logo.png')}}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Font Awesome Icons -->
@@ -84,7 +84,7 @@
                     <div class="col-md-4 footer-column text-center">
                         <div class="fo-title"><h2>কারিগরি সহায়তায়</h2></div>
                         <div class="foo-content text-center">
-                            <a href="https://taqitizar.com/" target="_blank"><img class="img-fluid" src="{{asset('images/taqi-logo.png')}}" alt=""></a>
+                            <a href="https://taqitizar.com/" target="_blank"><img class="img-fluid sponsor-img" src="{{asset('images/taqi-logo.png')}}" alt=""></a>
                         </div>
                     </div>
                 </div>

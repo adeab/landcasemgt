@@ -1,3 +1,17 @@
+.error-section{
+    background-color: #dc3545f5;
+    color: white;
+    margin: 1rem;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.error-section ul{
+    list-style: none;
+}
+.sponsor-img{
+    height: 2rem;
+}
 .stat-filter-select{
     /* border: 1px solid #fff; */
     background-color: transparent;
