@@ -1,5 +1,30 @@
+:root {
+    --dark-green: #6ab04c;
+    --light-green: #b8e994;
+    --medium-blue: #22a6b3;
+    --medium-red: #eb4d4b;
+}
+.link-text{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--dark-green);
+    cursor: pointer;
+}
+/* .layer {
+    background-color: #19875475;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+} */
+.layer2 {
+    background-color: rgba(248, 247, 216, 0.7);
+    width: 100%;
+    height: 100%;
+}
 .error-section{
-    background-color: #dc3545f5;
+    background-color: var(--light-red);
     color: white;
     margin: 1rem;
     border-radius: 10px;
@@ -35,6 +60,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 0;
 }
 .mainbody{
     /* background-color: #8DC642; */
@@ -47,7 +73,7 @@
 }
 .login-section{
     /* background-color: #8DC642; */
-    background-color: #8dc642e3;
+    background-color: var(--light-green);
     padding: 2rem;
     border-radius: 1rem;
 }
@@ -56,7 +82,7 @@
     background-color: #0000;
 }
 .homepage-card-header2{
-    background-color: #EEFBEA;
+    background-color: var(--light-green);
 }
 .homepage-card{
     height: 100vh;
@@ -64,14 +90,15 @@
 .homepage-card,
 .homepage-card-header,
 .homepage-card-header2 {
+    border: 0 !important;
     margin-top: 0 !important;
     margin-bottom: 0 !important;
-    border-radius: 0 !important;
+    /* border-radius: 0 !important; */
 
 }
 .homepage-card-header,
 .lower-footer{
-    background-color: #099F19;
+    background-color: var(--dark-green);
     color: white;
 
 }
@@ -95,12 +122,12 @@
     width: 25rem;
 }
 .upper-footer{
-    background-color: #ACECB6;
+    background-color: var(--light-green);
 }
 .call-section{
     /* background-color: #296D3B;
      */
-    background-color: #8DC642;
+    background-color: var(--light-green);
     border-radius: 10px;
     padding: 1rem;
     margin: 1rem 0;
@@ -115,10 +142,10 @@
     border-radius: 0 2.5rem;
 }
 .citizen-btn{
-    background-color: #1E3F21;
+    background-color: var(--dark-green);
 }
 .ofc-btn{
-    background-color: #054777;
+    background-color: var(--medium-blue);
 }
 .home-card{
     border: none;
@@ -136,7 +163,7 @@
 }
 .fo-title h2{
     font-size: small;
-    color: #592E80;
+
     font-weight: 800;
     padding: .5rem;
 }
@@ -162,6 +189,11 @@
 
 .landing-navbar{
     justify-content: center !important;
+    background-color: var(--dark-green) !important;
+    padding: .5rem;
+}
+.landing-navbar .nav-link{
+    color: white !important;
 }
 
 @media only screen and (max-width: 600px) {
