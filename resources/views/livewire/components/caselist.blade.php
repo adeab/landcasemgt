@@ -34,7 +34,7 @@
                     </div>
                 @endforeach
             </div>
-
+            {{-- <button wire:click="showVal()">Test</button> --}}
         </div>
     </div>
 
