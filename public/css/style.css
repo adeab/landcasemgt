@@ -2,7 +2,36 @@
     --dark-green: #6ab04c;
     --light-green: #b8e994;
     --medium-blue: #22a6b3;
-    --medium-red: #eb4d4b;
+    --medium-red: #DC3545;
+}
+.vw-btn,
+.edit-btn,
+.dlt-btn{
+    color: white;
+}
+
+.vw-btn{
+    background-color: var(--dark-green);
+}
+.edit-btn{
+    background-color: var(--medium-blue);
+}
+.dlt-btn{
+    background-color: var(--medium-red);
+}
+.filter-option{
+    margin: .5rem;
+}
+.success-message{
+    margin: 1rem;
+    text-align: center;
+}
+.nav-link.active,
+.btn-primary,
+.card-primary .card-header{
+    background-color: var(--dark-green) !important;
+    border-color: var(--dark-green) !important;
+    color: white !important;
 }
 .link-text{
     text-decoration: none;
@@ -55,6 +84,7 @@
     padding: 1rem;
     border-radius: 1rem;
 }
+
 .homepage-card-body{
     background-image: url('../images/background.jpeg');
     background-position: center;
@@ -62,9 +92,19 @@
     background-size: cover;
     padding: 0;
 }
+
 .mainbody{
     /* background-color: #8DC642; */
     background: url('../images/ivancik.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+.admin-body{
+    /* background-color: #8DC642; */
+    background: url('../images/bg-tp.png') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -81,8 +121,15 @@
     /* background-color: #8DC642; */
     background-color: #0000;
 }
+.main-footer{
+    text-align: center;
+    color: grey;
+    border: var(--light-green);
+}
+.main-footer,
 .homepage-card-header2{
     background-color: var(--light-green);
+
 }
 .homepage-card{
     height: 100vh;

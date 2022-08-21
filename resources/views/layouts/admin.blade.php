@@ -32,9 +32,9 @@
 <div class="wrapper">
 
   <!-- Preloader -->
-  <div class="preloader flex-column justify-content-center align-items-center">
+  {{-- <div class="preloader flex-column justify-content-center align-items-center">
     <img class="animation__shake" src="{{ asset('adminlte/dist/img/AdminLTELogo.png')}}" alt="AdminLTELogo" height="60" width="60">
-  </div>
+  </div> --}}
 
   <!-- Navbar -->
   <nav class="main-header navbar navbar-expand navbar-white navbar-light">
@@ -55,17 +55,13 @@
   {{-- </aside> --}}
 
   <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
+  <div class="content-wrapper admin-body">
 
 
     <!-- Main content -->
     <section class="content">
       <div class="container-fluid">
-        <br>
-        <!-- Small boxes (Stat box) -->
 
-        <!-- /.row -->
-        {{-- @livewire('components.statrow') --}}
         {{$slot}}
 
       </div><!-- /.container-fluid -->
@@ -85,7 +81,12 @@
 </div>
 <!-- ./wrapper -->
 @livewireScripts
+{{-- <script type="module">
+    import hotwiredTurbo from 'https://cdn.skypack.dev/@hotwired/turbo';
+</script> --}}
+{{-- <script src="https://cdn.jsdelivr.net/gh/livewire/turbolinks@v0.1.x/dist/livewire-turbolinks.js" data-turbolinks-eval="false"></script> --}}
 <!-- jQuery -->
+
 <script src="{{ asset('adminlte/plugins/jquery/jquery.min.js')}}"></script>
 <!-- jQuery UI 1.11.4 -->
 <script src="{{ asset('adminlte/plugins/jquery-ui/jquery-ui.min.js')}}"></script>
