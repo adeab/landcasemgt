@@ -18,10 +18,10 @@ class Caselist extends Component
     public $statuses;
     use WithPagination;
 
-    public function showVal(){
-        // dd($this->selected_types);
-        dd(count(array_filter($this->selected_types,function($a) {return $a==false;})));
-    }
+    // public function showVal(){
+    //     // dd($this->selected_types);
+    //     dd(count(array_filter($this->selected_types,function($a) {return $a==false;})));
+    // }
 
     public function mount(){
         $this->types= CaseType::all();

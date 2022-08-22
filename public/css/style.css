@@ -4,6 +4,12 @@
     --medium-blue: #22a6b3;
     --medium-red: #DC3545;
 }
+.custom-div-header,
+.custom-div-footer{
+    background-color: var(--light-green);
+    text-align: center;
+    padding: .5rem;
+}
 .vw-btn,
 .edit-btn,
 .dlt-btn{
