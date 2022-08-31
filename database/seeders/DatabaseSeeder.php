@@ -20,12 +20,13 @@ class DatabaseSeeder extends Seeder
             'name' => "Demo Admin",
             'email' => "admin@demo.com",
             'password' => Hash::make('password'),
-            'created_at' => Carbon::now()
+            'created_at' => Carbon::now(),
+            'user_type' => 'admin'
         ]);
         $case_types = [
-            "ল্যান্ডমার্ক ট্রাইবুনাল মামলা",
-            "ডিক্রি মামলা",
-            "১৫০ ধারা মামলা",
+            "ল্যান্ড সার্ভে ট্রাইবুনাল মামলা",
+            "ডিক্রি মামলা (দেওয়ানী আদালত)",
+            "রিভিউ (১৫০ ধারা) মামলা",
             "অন্যান্য"
 
         ];

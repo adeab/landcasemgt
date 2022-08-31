@@ -18,4 +18,8 @@ class Searchcase extends Component
     {
         return view('livewire.pages.searchcase');
     }
+    public function getCase()
+    {
+        return redirect()->to('/status?case_number='.$this->case_number.'&case_type='.$this->case_type_id);
+    }
 }

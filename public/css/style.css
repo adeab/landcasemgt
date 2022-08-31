@@ -121,7 +121,7 @@
     /* background-color: #8DC642; */
     background-color: var(--light-green);
     padding: 2rem;
-    border-radius: 1rem;
+    /* border-radius: 1rem; */
 }
 .homepage-card .card-body{
     /* background-color: #8DC642; */

@@ -1,13 +1,13 @@
 
 <x-app-layout>
-    <div class="card-body">
+    {{-- <div class="card-body"> --}}
         <!-- Session Status -->
         <x-auth-session-status class="mb-4" :status="session('status')" />
 
         <!-- Validation Errors -->
         <x-auth-validation-errors class="mb-4" :errors="$errors" />
         <x-login-form/>
-    </div>
+    {{-- </div> --}}
 </x-app-layout>
 
 {{-- old part starts here --}}

@@ -27,10 +27,10 @@ class Welcome extends Component
     {
         return view('livewire.pages.welcome');
     }
-    // public function getCase()
-    // {
-    //     return redirect()->to('/status?case_number='.$this->case_number.'&case_type='.$this->case_type_id);
-    // }
+    public function getCase()
+    {
+        return redirect()->to('/status?case_number='.$this->case_number.'&case_type='.$this->case_type_id);
+    }
     public function gotologin(){
         return redirect()->to('/login');
     }
